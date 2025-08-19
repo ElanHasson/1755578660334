@@ -1,6 +1,9 @@
 {
   "name": "the-ai-sre-on-call-how-traversal-solves-the-toughest-incidents",
   "version": "1.0.0",
+  "cacheDirectories": [
+    ".next/cache"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
