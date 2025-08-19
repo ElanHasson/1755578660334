@@ -63,7 +63,7 @@ sequenceDiagram
   CI->>Obs: Deploy v531 event + metrics/logs
   Obs-->>Trav: 5xx spike, p95 up, traces
   Trav->>Trav: Change correlation + RCA hypothesis
-  Trav-->>IC: Proposed plan (freeze, rollback, flag); dry-run results
+  Trav-->>IC: Proposed plan (freeze, rollback, flag) & dry-run results
   IC-->>Trav: Approve with policy guardrails
   Trav->>K8s: Pause canary, rollout undo to v530
   Trav->>Obs: Validate via synthetics + SLO burn stop
